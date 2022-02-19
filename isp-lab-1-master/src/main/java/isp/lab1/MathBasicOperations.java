@@ -32,4 +32,6 @@ public class MathBasicOperations {
             System.out.println("Argument: "+arg);
         System.out.printf("Result of adding %d with %d is: %d\n\n",10,23, MathBasicOperations.add(10,23));
     }
+
 }
+
