@@ -22,7 +22,7 @@ public class Exercise5Test {
     public void testGetSortedNumbers() {
         int[] sortedNumber = Exercise5.getSortedNumbers(someRandomNumbers);
         assertEquals("There should be 20 numbers in this array", 20, sortedNumber.length);
-        for (int i = 0; i <= sortedNumber.length - 1; i++) {
+        for (int i = 0; i <= sortedNumber.length - 2; i++) {
             assertTrue("The array should be sorted", sortedNumber[i] <= sortedNumber[i + 1]);
         }
     }

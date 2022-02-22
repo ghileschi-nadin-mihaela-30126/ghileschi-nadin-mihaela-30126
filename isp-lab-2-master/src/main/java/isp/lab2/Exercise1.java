@@ -1,6 +1,7 @@
 package isp.lab2;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Exercise1 {
 
@@ -12,10 +13,10 @@ public class Exercise1 {
      * @return the array of numbers read from keyboard
      */
     private static int[] getUserNumbers(int min) {
-         /*throw new UnsupportedOperationException(); */
+         /*throw new UnsupportedOperationException(); la ce mi foloseste asta????*/
         int array[] = null;
         int i;
-        for(i=1; i<min; i++){
+        for(i=0; i<min; i++){
               array[i]=generateRandom(2,10);
         }
          return array;
@@ -34,11 +35,21 @@ public class Exercise1 {
      * @return the arithmetical mean of the given numbers
      */
     protected static double computeTheArithmeticalMean(int[] userNumbers) {
-        throw new UnsupportedOperationException();
+      /*  throw new UnsupportedOperationException(); */
+      int i;
+      int result=0;
+      int arithmetical=0;
+      int arrayLength= userNumbers.length;
+
+      for(i=0; i<arrayLength; i++){
+             result= result + userNumbers[i];
+      } 
+      arithmetical = result/userNumbers.length;
+     return arithmetical;
     }
 
     public static void main(String[] args) {
-        /*int[] userNumbers = getUserNumbers(); */
+        int[] userNumbers = getUserNumbers(4); 
         System.out.println(generateRandom(2,10));
         /*System.out.println("Mean number is: " + computeTheArithmeticalMean(userNumbers)); */
     }
