@@ -1,6 +1,11 @@
 package isp.lab2;
 
+import static isp.lab2.Exercise3.calculateGeometricMean;
+import static isp.lab2.Exercise3.getPrimeNumbersFromInterval;
+import static isp.lab2.Exercise3.numberOfPNWithEvenSumOfDigits;
 import java.util.Scanner;
+import java.lang.Character;
+import java.lang.String;
 
 /**
  * Check readme.md file for the exercise requirements.
@@ -53,7 +58,10 @@ public class Exercise2 {
      * @return An array of words.
      */
     public static String[] splitEnumerationIntoWords(String inputEnumeration) {
-        throw new UnsupportedOperationException("Not implemented yet!");
+      /*  throw new UnsupportedOperationException("Not implemented yet!"); */
+        String cuvant[]= inputEnumeration.split(",");
+        
+         return cuvant;
     }
 
     /**
@@ -64,19 +72,52 @@ public class Exercise2 {
      * @return All the words starting with the given letter.
      */
     public static String[] findWordsStartingWith(String[] words, Character startingLetter) {
-        throw new UnsupportedOperationException("Not implemented yet!");
-    }
-
-    public static void main(String[] args) {
-        String enumeration = readEnumeration();
+       /* throw new UnsupportedOperationException("Not implemented yet!"); */
+       int i=0;
+       int k=0;
+      String[] b= new String[words.length];
+      
+       for(i=0; i<words.length; i++){
+         String litera= words[i];
+           Character primaLitera=litera.charAt(0);
+           if(primaLitera==startingLetter){
+                    b[k]=words[i];
+                    k++;
+           }
+        
+       }
+       String[] c = new String[k];
+       for(i=0; i<b.length;i++){
+           if(b[i]!=null){
+               c[i]=b[i];
+           }
+           }
+       return c;
+       }
+   
+      
+    
+ 
+      public static void main(String[] args) {
+      String enumeration = readEnumeration();
         Character startingLetter = readStartingLetter();
 
         if (enumeration != null && startingLetter != null) {
+              int i=0;
             String[] words = splitEnumerationIntoWords(enumeration);
             String[] results = findWordsStartingWith(words, startingLetter);
-            // print results
+            for(i=0; i<results.length; i++){
+                System.out.println(results[i]);
+            } 
+           /* System.out.println(results);// print results } */
         } else {
-            // print invalid input(s) message
+            System.out.println("Nu s-a introdus niciun sir si nicio litera!");
         }
     }
 }
+    
+
+  
+
+
+

@@ -13,7 +13,7 @@ public class Exercise1 {
      * @return the array of numbers read from keyboard
      */
     private static int[] getUserNumbers(int min) {
-         /*throw new UnsupportedOperationException(); la ce mi foloseste asta????*/
+         /*throw new UnsupportedOperationException(); */
         int array[] = null;
         int i;
         for(i=0; i<min; i++){
