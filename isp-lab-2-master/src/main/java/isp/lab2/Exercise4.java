@@ -1,5 +1,7 @@
 package isp.lab2;
 
+import static isp.lab2.Exercise3.isPrimeNumber;
+
 public class Exercise4 {
 
     /**
@@ -9,7 +11,28 @@ public class Exercise4 {
      * @return true if number is prime and false otherwise
      */
     public static boolean isPrimeNumber(final int number) {
-        throw new UnsupportedOperationException();
+       /* throw new UnsupportedOperationException(); */
+         int num = number, i = 2;
+    boolean flag = true;
+    if(num==1){
+        flag=false;    
+    }
+    if(num==0){
+         flag=false;
+    }
+   for(i=2; i<num; i++){
+           if (num%i==0) {   
+               flag = false;
+               break;
+        }   
+   }
+   
+    if (flag)
+      System.out.println(num + " is a prime number.");
+    else
+      System.out.println(num + " is not a prime number."); 
+    
+     return flag;
     }
 
     /**
@@ -19,7 +42,21 @@ public class Exercise4 {
      * @return first odd number from the array
      */
     public static int firstOdd(int[] someNumbers) {
-        throw new UnsupportedOperationException();
+       /* throw new UnsupportedOperationException(); */
+        int i=0;
+        int number=0;
+        for(i=0; i<someNumbers.length; i++){
+            if(someNumbers[i]%2==0){
+                System.out.println("This is an even number.");
+            }
+            else   { 
+                number=someNumbers[i];
+                break;
+            }
+            }
+         System.out.println("This: ");
+         System.out.println(number+ " is the first Odd number");
+        return number;
     }
 
     /**
@@ -29,7 +66,18 @@ public class Exercise4 {
      * @return first even number from the array
      */
     public static int firstEven(int[] someNumbers) {
-        throw new UnsupportedOperationException();
+       /* throw new UnsupportedOperationException(); */
+        int i=0;
+        int number=0;
+        for(i=0; i<someNumbers.length; i++){
+            if(someNumbers[i]%2==0){
+                number=someNumbers[i];
+                break;
+            }
+        }
+         System.out.println("This: ");
+         System.out.println(number+ " is the first Even number");
+        return number;
     }
 
     /**
@@ -40,7 +88,18 @@ public class Exercise4 {
      */
     public static int firstPrime(int[] someNumbers) {
         // TODO: Use isPrimeNumber(final int number)
-        throw new UnsupportedOperationException();
+       /* throw new UnsupportedOperationException(); */
+      int i=0;
+        int number=0;
+        for(i=0; i<someNumbers.length; i++){
+            if(isPrimeNumber(i)){
+                number=someNumbers[i];
+                break;
+            }
+        }
+         System.out.println("This: ");
+         System.out.println(number+ " is the first Prime number");
+        return number;
     }
 
     /**

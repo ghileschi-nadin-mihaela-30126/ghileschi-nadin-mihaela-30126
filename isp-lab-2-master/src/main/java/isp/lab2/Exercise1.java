@@ -14,7 +14,7 @@ public class Exercise1 {
      */
     private static int[] getUserNumbers(int min) {
          /*throw new UnsupportedOperationException(); */
-        int array[] = null;
+        int array[] = new int[min];
         int i;
         for(i=0; i<min; i++){
               array[i]=generateRandom(2,10);

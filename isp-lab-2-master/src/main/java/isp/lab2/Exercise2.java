@@ -95,9 +95,6 @@ public class Exercise2 {
        return c;
        }
    
-      
-    
- 
       public static void main(String[] args) {
       String enumeration = readEnumeration();
         Character startingLetter = readStartingLetter();
