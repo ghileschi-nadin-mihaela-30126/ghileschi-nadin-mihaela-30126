@@ -50,9 +50,10 @@ public class Exercise7 {
         /* while (true) { */
         for (int i = 0; i < answers.length; i++) {
             if (answers[i] < times) {
+                System.out.println("Your number is:");
+                System.out.println(answers[i]);
                 System.out.println("The number is smaller than the number you had to guess.");
                 System.out.println("Try again.");
-                System.out.println(answers[i]);
                 boolean duplicate = false;
                 int j = 0;
 
@@ -70,9 +71,10 @@ public class Exercise7 {
                 }
             }
             if (answers[i] > times) {
+                System.out.println("Your number is:");
+                System.out.println(answers[i]);
                 System.out.println("The number is bigger than the number you had to guess.");
                 System.out.println("Try again.");
-                System.out.println(answers[i]);
                 boolean duplicate = false;
                 int j = 0;
 
@@ -90,8 +92,9 @@ public class Exercise7 {
                 }
             }
             if (answers[i] == times) {
-                System.out.println("Congrats! You found the number.");
+                System.out.println("Your number is:");
                 System.out.println(answers[i]);
+                System.out.println("Congrats! You found the number.");
                 boolean duplicate = false;
                 int j = 0;
 
