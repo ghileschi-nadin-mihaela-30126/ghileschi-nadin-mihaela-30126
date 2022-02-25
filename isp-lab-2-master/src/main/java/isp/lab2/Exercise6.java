@@ -30,35 +30,28 @@ public class Exercise6 {
      */
     public static int[] generateRandomVectorRecursively(int n) {
        /* throw new UnsupportedOperationException(); */
-     
-       /* int vector[]= new int[n];
-       vector[0]=1;
-       vector[1]=2;
+     int first= 1; 
+     int second=2;
+        int vector[]= new int[n];
+       vector[0]=first;
+       vector[1]=second;
        int newVector[]= new int[n];
-       newVector[0]=vector[0];
-       int count=n;
-       int i=0;
-         for(i=1; i<count-1; i++){
-             
-        newVector[i]=vector[i]; /*1=>n=2; 2=> n=2 3=> n=4 4=>8            */
-        
-         /*  vector[i+1]=vector[i]*vector[i-1]; /* v2=2 v3=2*2=4 v4=4*2=8             */
-        /*   vector[i-1]=vector[i]; /*v0=2 v1=2 v2=4                */
-         /*  vector[i]=vector[i+1]; /*v1=2 v2=4 v3=8            */
-       /*}
-         for(i=0; i<=count-1; i++){
+       newVector[0]=first;
+       newVector[1]=second;
+       int i=0, k=2;
+       int produs=0;
+         for(i=0; i<n-2; i++){
+             produs=first*second;
+             first=second;
+             second=produs;
+             newVector[k]=produs;
+             k++;
+       }
+         for(i=0; i<n; i++){
               System.out.println(newVector[i]);
          }
-       return newVector; */
-       int vector[]= new int[n];
-       vector[0]=1;
-       vector[1]=2;
-       int i=0;
-       
-       for(i=2; i<n; i++){
-            vector[i]=vector[i-1]*vector[i-2];
-       }
-       return vector; 
+       return newVector; 
+      
      }    
     
 
