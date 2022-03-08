@@ -40,13 +40,16 @@ public class Exercise6 {
        newVector[1]=second;
        int i=0, k=2;
        int produs=0;
+
          for(i=0; i<n-2; i++){
+             
              produs=first*second;
              first=second;
              second=produs;
              newVector[k]=produs;
              k++;
        }
+
          for(i=0; i<n; i++){
               System.out.println(newVector[i]);
          }
