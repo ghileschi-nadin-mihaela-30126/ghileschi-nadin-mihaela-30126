@@ -1,6 +1,7 @@
 package isp.lab4.exercise1;
 
-import isp.lab4.exercise2.FireAlarm;
+import isp.lab4.exercise5.TemperatureSensor;
+import isp.lab4.exercise5.FireAlarm;
 import isp.lab4.exercise5.ControlerH;
 import isp.lab4.exercise5.House;
 import org.junit.Test;

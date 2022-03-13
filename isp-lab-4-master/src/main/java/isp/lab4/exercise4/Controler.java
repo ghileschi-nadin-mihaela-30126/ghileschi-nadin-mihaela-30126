@@ -1,9 +1,7 @@
 package isp.lab4.exercise4;
 
-import isp.lab4.exercise1.TemperatureSensor;
-import isp.lab4.exercise2.FireAlarm;
-
 public class Controler {
+
     private FireAlarm fireAlarm;
     private TemperatureSensor[] tempSensors= new TemperatureSensor[3];
 

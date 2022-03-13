@@ -1,8 +1,5 @@
 package isp.lab4.exercise5;
 
-import isp.lab4.exercise1.TemperatureSensor;
-import isp.lab4.exercise2.FireAlarm;
-
 public class ControlerH {
     private FireAlarm fireAlarm;
     private TemperatureSensor[] tempSensors;
@@ -22,7 +19,7 @@ public class ControlerH {
 
     public ControlerH() {
         this.fireAlarm =new FireAlarm(false) ;
-        this.tempSensors =new TemperatureSensor[2];
+        this.tempSensors =new TemperatureSensor[3];
     }
 
     public void setFireAlarm(FireAlarm fireAlarm) {
