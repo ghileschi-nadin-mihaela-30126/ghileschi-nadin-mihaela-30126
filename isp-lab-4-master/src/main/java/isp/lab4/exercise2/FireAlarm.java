@@ -12,8 +12,8 @@ public class FireAlarm {
         return active;
     }
 
-    public void setActive(boolean active) {
-        this.active = active;
+    public void setActive() {
+        this.active = true;
     }
 
     @Override

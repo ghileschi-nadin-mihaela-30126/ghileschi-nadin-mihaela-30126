@@ -13,4 +13,9 @@ public class FireAlarmTest {
         Assert.assertEquals("Expected in test: FireAlarm{active=true}", "FireAlarm{active=true}", f1.toString() );
 
     }
+    @Test
+    public void isActiveTest(){
+        Assert.assertEquals("Expected in test is: true", true, f1.isActive());
+    }
+
 }

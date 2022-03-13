@@ -7,7 +7,7 @@ public class Exercise2 {
         fire.isActive();
         System.out.println("The fire alarm is: " +fire.isActive());
 
-        fire.setActive(true);
+        fire.setActive();
         System.out.println("The fire alarm is now: " +fire.isActive());
 
         fire.toString();
