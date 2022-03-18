@@ -13,6 +13,11 @@ public class Card {
         return cardId;
     }
 
+    public String displayCard(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(" --> The cardID is: ").append(this.cardId).append(" The pin is: ").append(this.pin);
+        return stringBuilder.toString();
+    }
     public void setCardId(String cardId) {
         this.cardId = cardId;
     }

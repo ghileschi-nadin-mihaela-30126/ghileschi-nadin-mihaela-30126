@@ -1,14 +1,19 @@
 package isp.lab5.exercise1;
 
 public class CheckMoney extends Transaction{
-    private int money;
 
-    public CheckMoney(Account account, int money) {
+    public CheckMoney(Account account) {
         super(account);
-        this.money = money;
     }
 
-    public int getMoney() {
-        return money;
+    public double check(Account acc){
+        double amount;
+        amount=acc.getBalance();
+        return amount;
+    }
+
+    @Override
+    String execute() {
+        return null;
     }
 }

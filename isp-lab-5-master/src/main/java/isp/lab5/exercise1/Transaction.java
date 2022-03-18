@@ -1,6 +1,7 @@
 package isp.lab5.exercise1;
 
 abstract class Transaction {
+
     protected Account account;
 
     public Transaction(Account account) {
@@ -8,4 +9,5 @@ abstract class Transaction {
     }
 
     abstract String execute();
+
 }

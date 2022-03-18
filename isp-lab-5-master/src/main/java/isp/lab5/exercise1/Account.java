@@ -11,6 +11,16 @@ public class Account {
         this.card = card;
     }
 
+    public Account(){
+        //
+    }
+
+    public String displayAccount(){
+        StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(" --> The account owner is: ").append(this.owner).append(" The balance is: ").append(this.balance).append(card.displayCard());
+            return stringBuilder.toString();
+        }
+
     public String getOwner() {
         return owner;
     }
@@ -19,7 +29,7 @@ public class Account {
         this.owner = owner;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
@@ -34,5 +44,6 @@ public class Account {
     public void setCard(Card card) {
         this.card = card;
     }
+
 
 }

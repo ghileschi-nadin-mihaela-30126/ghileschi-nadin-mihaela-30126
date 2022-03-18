@@ -24,7 +24,6 @@ Given the UML class diagram above, implement the corresponding Java program.
 
 Create an UML Use-Case diagram describing an ATM system. Save jpg use case diagram in /docs subfolder and display it in this readme file bellow.
 
-**>>>>insert use case diagram here<<<<**
 
 ## Exercise 3
 
@@ -76,6 +75,7 @@ For the application above:
 * add a new class _BlackAndWhiteVideo_ which will display message "Play black and white video {name of the video}".
 * add necessary changes in ProxyVideo class so that depending on a constructor argument given in this class the proxy to call either black and white or color playable video.
 
+![Exercise 3 image](docs/ex3.jpg)
 **>>>>insert class diagram here<<<<**
 
 ## Exercise 4
