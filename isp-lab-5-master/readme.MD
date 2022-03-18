@@ -23,7 +23,7 @@ Given the UML class diagram above, implement the corresponding Java program.
 ## Exercise 2
 
 Create an UML Use-Case diagram describing an ATM system. Save jpg use case diagram in /docs subfolder and display it in this readme file bellow.
-
+![Exercise 2 image](docs/ex2.jpg)
 
 ## Exercise 3
 
@@ -175,5 +175,5 @@ For the application above:
 * create UML class diagram and display it bellow.
 * add new two classes(_Square_ and _RoundedSquare_) which will have their own implementation of draw method.
 * adapt the current implementation in order to be able to create instances of these classes based on their type. Test the new functionality using Main class.
-
+![Exercise 4 image](docs/ex4.jpg)
 **>>>>insert class diagram here<<<<**
