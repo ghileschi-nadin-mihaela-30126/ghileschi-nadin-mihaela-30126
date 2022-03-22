@@ -11,6 +11,12 @@ public class SensorReading {
         this.type = type;
     }
 
+    public String displaySensorReading(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(" --> The value of sensor is: ").append(this.value).append(" the location is: ").append(this.location).append(" and the type is: ").append(this.type);
+        return stringBuilder.toString();
+    }
+
     public int getValue() {
         return value;
     }

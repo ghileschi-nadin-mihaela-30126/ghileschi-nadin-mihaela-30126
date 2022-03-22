@@ -1,15 +1,17 @@
 package isp.lab6.exercise1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface IReadingRepository {
-
+    ArrayList<SensorReading> list = new ArrayList<SensorReading>();
     /**
      * Add a new sensor reading.
      *
      * @param reading
      */
     public void addReading(SensorReading reading);
+
 
     /**
      * Return avarage of all readings for a specific sensor type and location.
@@ -26,6 +28,7 @@ public interface IReadingRepository {
      * @return
      */
     public List<SensorReading> getReadingsByType(Type type);
+
 
     /**
      * List all readings sorted by location (alphabetical).
