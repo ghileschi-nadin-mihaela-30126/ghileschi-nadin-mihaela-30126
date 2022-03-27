@@ -28,4 +28,13 @@ public class SensorReading {
     public Type getType() {
         return type;
     }
+
+    @Override
+    public String toString() {
+        return "SensorReading{" +
+                "value=" + value +
+                ", location='" + location + '\'' +
+                ", type=" + type +
+                '}';
+    }
 }

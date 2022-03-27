@@ -8,15 +8,24 @@ public class Equipment {
     private boolean taken;
 
     public Equipment(String serialNumber) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        this.serialNumber=serialNumber;
+        this.name=null;
+        this.owner=null;
+        this.taken=false;
     }
 
     public Equipment(String name, String serialNumber) {
-        throw new UnsupportedOperationException("Not supported yet.");
+       this.name=name;
+       this.serialNumber=serialNumber;
+       this.owner=null;
+        this.taken=false;
     }
 
     public Equipment(String name, String serialNumber, String owner) {
-        throw new UnsupportedOperationException("Not supported yet.");
+     this.name=name;
+     this.serialNumber=serialNumber;
+     this.owner=owner;
+     this.taken=true;
     }
 
     public String getName() {
@@ -42,7 +51,10 @@ public class Equipment {
      * @param owner - owner name
      */
     public void provideEquipmentToUser(final String owner) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        this.owner=owner;
+        System.out.print("The equipment is given to: "+owner);
+        this.taken=true;
+        System.out.println();
     }
 
     /**
@@ -51,6 +63,23 @@ public class Equipment {
      * Remove the owner
      */
     public void returnEquipmentToOffice() {
-        throw new UnsupportedOperationException("Not supported yet.");
+           if(isTaken()!=false){
+                  System.out.println("The equipment is given to: "+this.owner);
+                  System.out.println();
+                  this.taken=false;
+           }
+           if(getOwner()!=null){
+               System.out.print("The equipment owner is: "+this.owner);
+               this.owner=null;
+               System.out.println();
+           }
+           System.out.println("The equipment has been returned.");
     }
+
+    public String displayEquipments(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(" --> The name of equipment is: ").append(this.name).append(" the serialNumber is: ").append(this.serialNumber).append(" and the owner is: ").append(this.owner).append("and the equipmnt taken status is: ").append(this.taken);
+        return stringBuilder.toString();
+    }
+
 }

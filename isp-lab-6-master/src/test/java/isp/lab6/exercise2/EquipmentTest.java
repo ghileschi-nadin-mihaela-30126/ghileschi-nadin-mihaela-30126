@@ -30,6 +30,7 @@ public class EquipmentTest {
     @Test
     public void testReturnEquipmentToOffice() {
         final Equipment providedEquipment = new Equipment("Dell", "SN123", "John");
+        providedEquipment.provideEquipmentToUser("John");
         assertTrue("Equipment is provided to 'John'", providedEquipment.isTaken());
         assertEquals("Equipment is provided to 'John'", "John", providedEquipment.getOwner());
 
