@@ -12,22 +12,6 @@ public class SafeHomeTest {
     @Before
     public void instantiateDoorController() {
         //INITIALISE CONTROLLER OBJECT HERE
-        ctrl=new ControllerInterface() {
-            @Override
-            public DoorStatus enterPin(String pin) throws Exception {
-                return null;
-            }
-
-            @Override
-            public void addTenant(String pin, String name) throws Exception {
-
-            }
-
-            @Override
-            public void removeTenant(String name) throws Exception {
-
-            }
-        }
     }
 
     // >>>> DO NOT CHANGE CODE AFTER THIS LINE ! <<<<
